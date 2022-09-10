@@ -1,5 +1,5 @@
 {
-  "name": "ku-bti",
+  "name": "aedongyeon2022",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "deploy": "cp build/index.html build/404.html && gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "https://mintway0341.github.io/ku-bti",
+  "homepage": "https://mintway0341.github.io/aedongyeon2022",
   "eslintConfig": {
     "extends": [
       "react-app",

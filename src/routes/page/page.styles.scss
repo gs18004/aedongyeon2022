@@ -1,0 +1,52 @@
+.page1 {
+  height: 100vh;
+  background-image: url("../../assets/pg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.page2 {
+  height: 100vh;
+  background-image: url("../../assets/pg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.page3 {
+  height: 100vh;
+  background-image: url("../../assets/pg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+@font-face {
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  font-family: "BMDOHYEON";
+}
+h1 {
+  font-family: "BMDOHYEON";
+}
+h2 {
+  font-family: "BMDOHYEON";
+}
+h3 {
+  font-family: "BMDOHYEON";
+}
+h4 {
+  font-family: "BMDOHYEON";
+}
+h5 {
+  font-family: "BMDOHYEON";
+}
+h6 {
+  font-family: "BMDOHYEON";
+}
+button {
+  font-family: "BMDOHYEON";
+}

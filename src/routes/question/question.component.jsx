@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./question.styles.scss";
 import Questions from "../../common/api/questionsApi.json";
@@ -9,25 +9,21 @@ const Question = () => {
   const [questionNumber, setQuestionNumber] = useState(1);
   const [cntE, setCntE] = useState(0);
   const [cntI, setCntI] = useState(0);
-  const [cntS, setCntS] = useState(0);
-  const [cntN, setCntN] = useState(0);
   const [cntT, setCntT] = useState(0);
   const [cntF, setCntF] = useState(0);
   const [cntJ, setCntJ] = useState(0);
   const [cntP, setCntP] = useState(0);
+  useEffect(() => {
+    if (cntE + cntI + cntT + cntF + cntJ + cntP !== 0) toNext();
+    console.log(questionNumber);
+  }, [cntE, cntI, cntT, cntF, cntJ, cntP]);
 
-  console.log(
-    `E${cntE} I${cntI} S${cntS} N${cntN} T${cntT} F${cntF} J${cntJ} P${cntP}`
-  );
+  console.log(`E${cntE} I${cntI} T${cntT} F${cntF} J${cntJ} P${cntP}`);
   const handleTypes = (selectedType) => {
     switch (Questions[questionNumber]["option"]) {
       case "EI":
         if (selectedType === "E") setCntE(cntE + 1);
         else if (selectedType === "I") setCntI(cntI + 1);
-        break;
-      case "SN":
-        if (selectedType === "S") setCntS(cntS + 1);
-        else if (selectedType === "N") setCntN(cntN + 1);
         break;
       case "TF":
         if (selectedType === "T") setCntT(cntT + 1);
@@ -43,13 +39,21 @@ const Question = () => {
     }
   };
   const toNext = () => {
-    if (questionNumber < 20) setQuestionNumber(questionNumber + 1);
+    if (questionNumber < 9) setQuestionNumber(questionNumber + 1);
     else {
       const eOri = cntE > cntI ? "E" : "I";
-      const sOrn = cntS > cntN ? "S" : "N";
       const tOrf = cntT > cntF ? "T" : "F";
       const jOrp = cntJ > cntP ? "J" : "P";
-      navigate(`/result/${eOri}${sOrn}${tOrf}${jOrp}`);
+      if (eOri === "E" && tOrf === "F" && jOrp === "J") navigate(`/3/wendy`);
+      if (eOri === "I" && tOrf === "T" && jOrp === "P") navigate(`/3/wendy`);
+      if (eOri === "E" && tOrf === "F" && jOrp === "P") navigate(`/3/peterpan`);
+      if (eOri === "I" && tOrf === "F" && jOrp === "P") navigate(`/3/peterpan`);
+      if (eOri === "I" && tOrf === "F" && jOrp === "J")
+        navigate(`/3/tinkerbell`);
+      if (eOri === "I" && tOrf === "T" && jOrp === "J")
+        navigate(`/3/tinkerbell`);
+      if (eOri === "E" && tOrf === "T" && jOrp === "J") navigate(`/3/hook`);
+      if (eOri === "E" && tOrf === "T" && jOrp === "P") navigate(`/3/hook`);
     }
   };
   const handleOnClick0 = () => {
@@ -57,14 +61,12 @@ const Question = () => {
     const selectedType = Questions[questionNumber]["answers"][0]["type"];
     console.log(selectedType);
     handleTypes(selectedType);
-    toNext();
   };
   const handleOnClick1 = () => {
     console.log(questionNumber);
     const selectedType = Questions[questionNumber]["answers"][1]["type"];
     console.log(selectedType);
     handleTypes(selectedType);
-    toNext();
   };
 
   console.log(Questions[0]);
@@ -72,17 +74,6 @@ const Question = () => {
     <div className="question-background">
       <div className="question-box">
         <div className="question-container">
-          <div className="question-title-container">
-            <h1 className="question-title">
-              <TextTransition
-                className="question-title-transition"
-                springConfig={presets.default}
-              >
-                {questionNumber}
-              </TextTransition>
-            </h1>
-            <h1 className="question-title">/20</h1>
-          </div>
           <p className="question-paragraph">
             {Questions[questionNumber]["question"]}
           </p>
@@ -95,9 +86,6 @@ const Question = () => {
                 {Questions[questionNumber]["answers"][1]["content"]}
               </button>
             </div>
-            <Link to="/">
-              <button className="result-button-to-home">처음으로</button>
-            </Link>
           </div>
         </div>
       </div>

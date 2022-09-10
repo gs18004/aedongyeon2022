@@ -1,55 +1,33 @@
 .home-background {
   height: 100vh;
-  background-color: #d6cbbd;
+  background-image: url("../../assets/bg7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
 }
-
-.home-box {
-  width: 60vw;
-  height: 10vh;
-  background-color: rgb(240, 240, 240);
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: auto;
-  border-radius: 4vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: 0vh 2vh 3vh 0vh rgba(0, 0, 0, 0.2);
-  animation: opacity0to1 0.5s ease-in-out 0s 1 normal forwards;
-}
-.title-buttons-container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.home-title {
-  color: black;
-  font-size: 4vh;
-  text-align: center;
-}
 .button-start {
-  width: 20vw;
-  height: 5vh;
+  width: 35vw;
+  height: 6vh;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 1vh;
+  text-align: center;
+  margin-top: 45vh;
 
   justify-content: center;
   align-items: center;
-  border-radius: 5vh;
-  border-width: 0px;
-  background-color: #8b0029;
-  box-shadow: 0vh 0.5vh 2vh 0vh #8b002a93;
-  font-size: 1.5vh;
-  color: white;
+  border-radius: 2.5vh;
+  border-width: 2px;
+  background-color: #ffffae;
+  font-size: 2.3vh;
+  color: #9e993e;
+  border-color: #9e993e;
   font-weight: 700;
   transition: top ease 0.5s;
   cursor: pointer;
 }
 .button-start:active {
-  background-color: #680120;
+  background-color: #ffffae70;
 }
 
 @keyframes opacity0to1 {
@@ -69,4 +47,35 @@
   -webkit-user-select: none;
   -khtml-user-select: none;
   user-select: none;
+}
+@font-face {
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  font-family: "BMDOHYEON";
+}
+h1 {
+  font-family: "BMDOHYEON";
+}
+h2 {
+  font-family: "BMDOHYEON";
+}
+h3 {
+  font-family: "BMDOHYEON";
+}
+h4 {
+  font-family: "BMDOHYEON";
+}
+h5 {
+  font-family: "BMDOHYEON";
+}
+h6 {
+  font-family: "BMDOHYEON";
+}
+button {
+  font-family: "BMDOHYEON";
 }
