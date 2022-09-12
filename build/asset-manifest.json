@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/aedongyeon2022/static/css/main.41551a83.css",
+    "main.js": "/aedongyeon2022/static/js/main.5c8307e7.js",
+    "static/js/787.f5a430eb.chunk.js": "/aedongyeon2022/static/js/787.f5a430eb.chunk.js",
+    "static/media/pg3.png": "/aedongyeon2022/static/media/pg3.7182b148c7c57c0dd17a.png",
+    "static/media/pg2.png": "/aedongyeon2022/static/media/pg2.166f2faf0744d1d093fd.png",
+    "static/media/bg4.png": "/aedongyeon2022/static/media/bg4.3feb5ddf5d39283644ba.png",
+    "static/media/bg7.png": "/aedongyeon2022/static/media/bg7.a74e4a1aedd3a2401954.png",
+    "static/media/bg6.png": "/aedongyeon2022/static/media/bg6.bb1db96cb19dd85c3ca9.png",
+    "static/media/pg1.png": "/aedongyeon2022/static/media/pg1.936a395a6f73aaffcffb.png",
+    "static/media/developer1.PNG": "/aedongyeon2022/static/media/developer1.daa179d56ded97594b8f.PNG",
+    "static/media/character_tinkerbell.png": "/aedongyeon2022/static/media/character_tinkerbell.179ce0535905eb65c81a.png",
+    "static/media/character_hook.png": "/aedongyeon2022/static/media/character_hook.6fb9d3f4ef96affb3c75.png",
+    "static/media/character_peterpan.png": "/aedongyeon2022/static/media/character_peterpan.a2bd63863323bf0adfe2.png",
+    "static/media/character_wendy.png": "/aedongyeon2022/static/media/character_wendy.917a9b88e04618da4e6f.png",
+    "index.html": "/aedongyeon2022/index.html",
+    "main.41551a83.css.map": "/aedongyeon2022/static/css/main.41551a83.css.map",
+    "main.5c8307e7.js.map": "/aedongyeon2022/static/js/main.5c8307e7.js.map",
+    "787.f5a430eb.chunk.js.map": "/aedongyeon2022/static/js/787.f5a430eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41551a83.css",
+    "static/js/main.5c8307e7.js"
+  ]
+}
