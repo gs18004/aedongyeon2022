@@ -1,10 +1,8 @@
 import "./page.styles.scss";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Pg3 = () => {
-  const { mbtiName } = useParams();
-  const link = `/result/${mbtiName}`;
   return (
-    <Link to={link}>
+    <Link to="/4">
       <div className="page3"></div>
     </Link>
   );

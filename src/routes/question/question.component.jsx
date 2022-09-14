@@ -44,16 +44,16 @@ const Question = () => {
       const eOri = cntE > cntI ? "E" : "I";
       const tOrf = cntT > cntF ? "T" : "F";
       const jOrp = cntJ > cntP ? "J" : "P";
-      if (eOri === "E" && tOrf === "F" && jOrp === "J") navigate(`/3/wendy`);
-      if (eOri === "I" && tOrf === "T" && jOrp === "P") navigate(`/3/wendy`);
-      if (eOri === "E" && tOrf === "F" && jOrp === "P") navigate(`/3/peterpan`);
-      if (eOri === "I" && tOrf === "F" && jOrp === "P") navigate(`/3/peterpan`);
+      if (eOri === "E" && tOrf === "F" && jOrp === "J") navigate(`/5/wendy`);
+      if (eOri === "I" && tOrf === "T" && jOrp === "P") navigate(`/5/wendy`);
+      if (eOri === "E" && tOrf === "F" && jOrp === "P") navigate(`/5/peterpan`);
+      if (eOri === "I" && tOrf === "F" && jOrp === "P") navigate(`/5/peterpan`);
       if (eOri === "I" && tOrf === "F" && jOrp === "J")
-        navigate(`/3/tinkerbell`);
+        navigate(`/5/tinkerbell`);
       if (eOri === "I" && tOrf === "T" && jOrp === "J")
-        navigate(`/3/tinkerbell`);
-      if (eOri === "E" && tOrf === "T" && jOrp === "J") navigate(`/3/hook`);
-      if (eOri === "E" && tOrf === "T" && jOrp === "P") navigate(`/3/hook`);
+        navigate(`/5/tinkerbell`);
+      if (eOri === "E" && tOrf === "T" && jOrp === "J") navigate(`/5/hook`);
+      if (eOri === "E" && tOrf === "T" && jOrp === "P") navigate(`/5/hook`);
     }
   };
   const handleOnClick0 = () => {
